@@ -15,7 +15,7 @@ In the meantime, below is an example of what you can do with just a few lines of
 
 num_points = st.slider("Number of points in spiral", 1, 10000, 1100)
 num_turns = st.slider("Number of turns in spiral", 1, 300, 31)
-pp= "https://app.powerbi.com/reportEmbed?reportId=0ed36c62-945a-4dac-bb0a-c00a465e35de&appId=607a9ff2-894d-47a9-8979-6ab4cf5e9176&autoAuth=true&ctid=d8ecfc2e-3c91-446a-8501-12e47d2fe57b"
+pp= st.show("https://app.powerbi.com/reportEmbed?reportId=0ed36c62-945a-4dac-bb0a-c00a465e35de&appId=607a9ff2-894d-47a9-8979-6ab4cf5e9176&autoAuth=true&ctid=d8ecfc2e-3c91-446a-8501-12e47d2fe57b")
 
 indices = np.linspace(0, 1, num_points)
 theta = 2 * np.pi * num_turns * indices
